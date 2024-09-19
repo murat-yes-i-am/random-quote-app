@@ -1,0 +1,68 @@
+$backgroundColor: var(--background-color);
+$primaryColor: white;
+
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --background-color: gray;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background-color: $backgroundColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#root {
+  max-width: 80%;
+}
+
+.quote-box {
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px black;
+  background-color: $primaryColor;
+  color: $backgroundColor;
+
+  .quote-box__quote-text {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 2% 2% 0% 2%;
+
+    &:before {
+      content: '``';
+    }
+  }
+
+  .quote-box__quote-author {
+    text-align: right;
+  }
+
+  .quote-box__buttons {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .quote-box__new-quote-button,
+  .quote-box__tweet-button {
+    background-color: $backgroundColor;
+    color: $primaryColor;
+  }
+}
+
+.button {
+  border: none;
+  padding: 2%;
+  border-radius: 5px;
+}
