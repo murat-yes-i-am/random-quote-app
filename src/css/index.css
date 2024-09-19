@@ -1,0 +1,62 @@
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --background-color: gray;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#root {
+  max-width: 80%;
+}
+
+.quote-box {
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px black;
+  background-color: white;
+  color: var(--background-color);
+}
+.quote-box .quote-box__quote-text {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 2% 2% 0% 2%;
+}
+.quote-box .quote-box__quote-text:before {
+  content: "``";
+}
+.quote-box .quote-box__quote-author {
+  text-align: right;
+}
+.quote-box .quote-box__buttons {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quote-box .quote-box__new-quote-button,
+.quote-box .quote-box__tweet-button {
+  background-color: var(--background-color);
+  color: white;
+}
+
+.button {
+  border: none;
+  padding: 2%;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=index.css.map */
